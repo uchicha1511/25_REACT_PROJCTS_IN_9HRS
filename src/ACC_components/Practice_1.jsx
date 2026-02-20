@@ -63,7 +63,9 @@ const Practice_1 = () => {
   return (
     <div className="w-full min-h-screen bg-gray-300 flex flex-col gap-8 justify-center items-center p-10">
            <button
-          onClick={() => setIsMultiSelectionEnable(!isMultiSelectionEnable)}
+          onClick={() => {setIsMultiSelectionEnable(!isMultiSelectionEnable)
+            setMultiID([]);
+          }}
           className={`p-2 rounded-md  ${isMultiSelectionEnable?"bg-green-300 ":"bg-red-300 "} cursor-pointer`}
         >
           {
